@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #3498db, #2ecc71); /* Default Background Gradient */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    position: relative; /* For positioning the max count button */
+  }
+
+  .counter h1 {
+    color: #333;
+    font-size: 24px;
+  }
+
+  .count-display {
+    margin: 20px 0;
+  }
+
+  #counter-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border: 2px solid #2c3e50;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+  }
+  
+  #counter {
+    font-size: 45px;
+    color: #2c3e50;
+  }
+  
+  button {
+    margin: 10px;
+    border: none;
+    background-color: #203542; /* Silver button */
+    color: white;
+    font-size: 16px;
+    border-radius: 50%; /* Round shape */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+  }
+  
+  /* Increment button (medium circle) */
+  #incrementBtn {
+    padding: 20px;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;  /* Medium circle */
+    position: relative;
+    left: 0px;
+  }
+
+  /* Reset button (small circle) */
+  #resetBtn {
+    padding: 10px;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;  /* Small circle */
+    position: absolute;
+    bottom: 130px;
+    right: 70px;
+  }
+  
+  /* Set max count button (small circle) */
+  #maxCountBtn {
+    padding: 15px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;  /* Small circle */
+    position: absolute; /* Positioning the Set Max Count button */
+    bottom: 20px;
+    right: 30px; /* Right side lower corner */
+  }
+
+  #maxCountDisplay {
+    font-size: 16px;
+    color: #4f6061;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
